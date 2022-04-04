@@ -1,5 +1,6 @@
 ---
 title: Kafka安装和使用
+date: 2018-01-05 00:00:00
 tags: Kafka
 top-img: /img/1.jpg
 keyword: "kafka"

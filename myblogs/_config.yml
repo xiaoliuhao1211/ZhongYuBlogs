@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ZYBlogs
-subtitle: ''
-description: '等等我 还在努力'
-keywords:
-author: Liu hao
-language: en
-timezone: ''
+title: ZYBlog
+subtitle: "等等我，还在努力"
+description: "刘浩的部落阁"
+keywords: "大数据 hadoop hive spark"
+author: 刘浩
+language: zh-CN
+timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -37,7 +37,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -45,23 +45,23 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -81,7 +81,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -94,10 +94,43 @@ include:
 exclude:
 ignore:
 
+search:
+  path: search.xml
+  field: post
+  content: false
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+# live2d:
+#   enable: true # 是否启用看板娘
+#   scriptFrom: local # 默认
+#   pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+#   pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+#   pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+#   # scriptFrom: jsdelivr    # jsdelivr CDN
+#   # scriptFrom: unpkg    # unpkg CDN
+#   # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js    # 你的自定义 url
+#   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+#   debug: false # 调试, 是否在控制台输出日志
+#   model:
+#     use: live2d-widget-model-wanko # npm-module 包的名字
+#     scale: 1
+#     hHeadPos: 0.5
+#     vHeadPos: 0.618
+#   display:
+#     superSample: 2
+#     width: 200
+#     height: 400
+#     position: left # 左侧还是右侧
+#     # hOffset: -30
+#     # vOffset: -20    # 距底部距离
+#   mobile:
+#     show: false # 手机端是否可见，建议不可见否则可能影响阅读
+#     scale: 0.5
+## live2d
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +138,11 @@ deploy:
   type: git
   repo: liuhao@39.104.77.90:/home/liuhao/hexo.git
   branch: master
+# deploy:
+#   type: ftpsy
+#   connection:
+#     host: cera2.host.itdata.icu
+#     user: serx06pwyri
+#     password: hqlhqlhql
+#     port: 21
+#   root: /wwwroot
