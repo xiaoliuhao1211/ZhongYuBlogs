@@ -53,3 +53,14 @@ public final class CacheProxy {
     }
 
 }
+
+
+/*
+缓存过期策略 定时过期和定期过期 Redis
+
+
+缓存驱除淘汰策略  LRU LFU
+
+
+
+ */
